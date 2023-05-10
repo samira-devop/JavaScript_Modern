@@ -47,14 +47,14 @@
      return numberCounter;
  }
 
- const array1 = [1, 2,3, 4, 5]
+ const array1 = [1, 2, 3, 4, 5]
 const array2 = ['a', 'b', 'c', 'd', 'e'];
 
 const interleave = (array1, array2) => {
     if (array1.length !== array2.length) {
       return 'ERROR: Array length mismatch';
     }
-  
+    
     let result = '';
     for (let i = 0; i < array1.length; i++) {
       result += array1[i] + array2[i];
@@ -88,15 +88,24 @@ let str = "today this is a this is a this is a test.";
 
 
 console.log(str.split("this").length - 1);
-// let countWord 
-// let word = str.string
-// for ( let i = 0; i < str.length; i++) {
-//     if( word ==='this'){
-//         countWord += 1;
-//     }
 
-// }
-// console.log(countWord)
+
+//ex6
+
+const array = ['this', 'is', 'a', 'test', 'happy'];
+
+let longestWord = array[0];
+const longestString = (array) => {
+
+    for (let i = 0; i < array.length; i++) {
+        
+        if (array[i].length > array[0].length) 
+
+            longestWord = array[i]
+    }
+    return longestWord
+}
+console.log(longestString(array));
  
 
  
