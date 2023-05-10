@@ -29,6 +29,8 @@
         return min
     }
     console.log(minNumber(arr));
+
+
  // const ex3 = () => {
  //     // TODO...
  // }
@@ -44,6 +46,25 @@
  //     }
  //     return numberCounter;
  // }
+
+ const array1 = [1, 2]
+const array2 = ['a', 'b', 'c', 'd', 'e'];
+
+const interleave = (array1, array2) => {
+    if (array1.length !== array2.length) {
+      return 'ERROR: Array length mismatch';
+    }
+  
+    let result = '';
+    for (let i = 0; i < array1.length; i++) {
+      result += array1[i] + array2[i];
+    }
+  
+    return result;
+  }
+  console.log(interleave(array1, array2));
+ 
+
  
  // const main = async () => {
  //     ex1();
