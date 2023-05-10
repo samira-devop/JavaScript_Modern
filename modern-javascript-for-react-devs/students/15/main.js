@@ -39,15 +39,15 @@
  // Your functions here...
  //
  
- // const countNumbers = (array) => {
- //     let numberCounter = 0;
- // for (let i = 0; i < array.length ; i++) { 
- //     if(typeof array[i] == 'number') numberCounter ++;
- //     }
- //     return numberCounter;
- // }
+ const countNumbers = (array) => {
+     let numberCounter = 0;
+ for (let i = 0; i < array.length ; i++) { 
+     if(typeof array[i] == 'number') numberCounter ++;
+     }
+     return numberCounter;
+ }
 
- const array1 = [1, 2]
+ const array1 = [1, 2,3, 4, 5]
 const array2 = ['a', 'b', 'c', 'd', 'e'];
 
 const interleave = (array1, array2) => {
@@ -63,6 +63,24 @@ const interleave = (array1, array2) => {
     return result;
   }
   console.log(interleave(array1, array2));
+
+ 
+
+  const palidrome =(string) =>{
+
+     const pal = string.length;
+    for (let i = 0; i< pal; i++) {
+    if (string[i] !== string[string.length -1 -i]){
+    
+        return false}
+
+}
+  return true  
+
+}
+
+console.log(palidrome('radar'));
+console.log(palidrome('month'));
  
 
  
