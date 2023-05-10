@@ -81,6 +81,22 @@ const interleave = (array1, array2) => {
 
 console.log(palidrome('radar'));
 console.log(palidrome('month'));
+
+
+//ex5
+let str = "today this is a this is a this is a test.";
+
+
+console.log(str.split("this").length - 1);
+// let countWord 
+// let word = str.string
+// for ( let i = 0; i < str.length; i++) {
+//     if( word ==='this'){
+//         countWord += 1;
+//     }
+
+// }
+// console.log(countWord)
  
 
  
