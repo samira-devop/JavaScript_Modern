@@ -70,7 +70,7 @@ const interleave = (array1, array2) => {
 
      const pal = string.length;
     for (let i = 0; i< pal; i++) {
-    if (string[i] !== string[string.length -1 -i]){
+    if (string[i] !== string[pal -1 -i]){
     
         return false}
 
@@ -108,12 +108,27 @@ const longestString = (array) => {
 console.log(longestString(array));
  
 
+ //ex7
+
+ let n = [1, 3, 6, 3, 6, 10];
+ n.sort(function(a,b){return a-b});
+ console.log(n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+ const main = async () => {
+   //  ex1();
+ }
  
- // const main = async () => {
- //     ex1();
- //}
- 
- 
- 
- // main();
+main();
  
