@@ -12,13 +12,11 @@
 
 //const ex2 = () => {
     // TODO...
-
+  // console.log(min);
+  //}
     const arr = [12, 55, 2, 22, 11];
     let min = arr[0]; 
    
-    // console.log(min);
-  //}
- 
   const minNumber = (arr) => {
      for (let i = 0; i < arr.length ; i++) { 
      if (arr[i] < min){
@@ -114,12 +112,11 @@ console.log(longestString(array));
  n.sort(function(a,b){return a-b});
  console.log(n)
 
+//ex8
+let words = "Count the words in this string";
 
-
-
-
-
-
+const checkWords = words.split(new RegExp('\\s+'))
+console.log(checkWords.length);
 
 
 
