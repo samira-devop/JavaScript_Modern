@@ -142,6 +142,17 @@ return count
 console.log(countS(a))
 
 
+//ex 10
+
+let  array = ["this", "is", "a", "test"];
+const countLetters = (array) => {
+  let string = array.toString();
+  let newString = string.replace(/[^a-z]/gi, "").length
+  return newString
+
+}
+console.log(countLetters (array));
+
 //  const main = async () => {
 //    //  ex1();
 //  }
