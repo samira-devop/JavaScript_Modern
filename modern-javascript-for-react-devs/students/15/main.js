@@ -153,9 +153,18 @@ const countLetters = (array) => {
 }
 console.log(countLetters (array));
 
+
+//ex11
+let arr = ['dog', 3, 7, 'cat', 13, 'car'];
+const numbersOnly = (arr) => {
+  let arr1 = arr.toString();
+  let newArr = arr1.replace(/\D/g, '').length
+  return newArr
+}
+console.log(numbersOnly(arr));
+
 //  const main = async () => {
 //    //  ex1();
 //  }
  
 // main();
- 
